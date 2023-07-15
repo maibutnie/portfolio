@@ -1,0 +1,28 @@
+.footer {
+    height: 200px;
+    font-size: var(--font-footer);
+}
+
+.footer-contact {
+    padding: 88px 0;
+}
+
+.footer-fem {
+    padding: 88px 0;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--yellow);
+}
+
+.link:hover {
+    opacity: 0.5;
+    transition: var(--main-transition);
+}
+
+@media (max-width: 768px) {
+    .footer-contact, .footer-fem {
+        padding: 20px 0;
+    }
+}
