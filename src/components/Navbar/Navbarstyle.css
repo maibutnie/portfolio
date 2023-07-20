@@ -1,0 +1,86 @@
+nav.navbar {
+  padding: var(--padding-nav);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: var(--main-transition);
+}
+
+nav.navbar.scrolled {
+  padding: var(--padding-nav-scrolled);
+  background-color: var(--background);
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  color: var(--yellow) !important;
+  letter-spacing: var(----letter-space);
+  padding: var(--padding-nav-link);
+  font-size: var(--font-size-main);
+  opacity: var(--opacity-main);
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
+  opacity: 1;
+}
+
+span.navbar-text {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  margin-left: var(--margin-icon);
+}
+
+.icon a {
+  width: var(--icon-linkedin);
+  height: var(--icon-linkedin);
+  background: var(--background);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: var(--margin-icon-a);
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid var(--yellow);
+}
+
+.icon a::before {
+  content: "";
+  width: var(--icon-linkedin);
+  height: var(--icon-linkedin);
+  position: absolute;
+  background-color: var(--yellow-rgba);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: var(--main-transition);
+
+}
+
+.icon a:hover::before {
+  transform: scale(1);
+}
+
+.icon a img {
+  width: 40%;
+  z-index: 1;
+  transition: var(--main-transition);
+}
+
+.opened {
+  background-color: var(--background);
+}
+
+@media (max-width: 768px) {
+  nav.navbar {
+    background-color: var(--background);
+  }
+  .links {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
