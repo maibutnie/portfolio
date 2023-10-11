@@ -38,7 +38,7 @@ function AboutMe() {
                 <VerticalTimelineElement
                     contentStyle={{ background: 'var(--blue)', color: 'var(--yellow)' }}
                     contentArrowStyle={{ borderRight: '7px solid  var(--blue)' }}
-                    date="2023 - to date"
+                    date="April - September 2023"
                     iconStyle={{ background: 'var(--blue)', color: 'var(--yellow)' }}
                     icon={<Mortarboard />}
                 >
@@ -47,9 +47,20 @@ function AboutMe() {
                     <p>Faculty: Applied Informatics</p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    contentStyle={{ background: 'var(--blue)', color: 'var(--yellow)' }}
+                    contentArrowStyle={{ borderRight: '7px solid  var(--blue)' }}
+                    date="October 2023 - to date"
+                    iconStyle={{ background: 'var(--blue)', color: 'var(--yellow)' }}
+                    icon={<Mortarboard />}
+                >
+                    <h3 className="vertical-timeline-element-title">Technische Universität Berlin</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Berlin, Germany</h4>
+                    <p>Program: Medieninformatik</p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
                     contentStyle={{ background: 'var(--accent-background)', color: 'var(--accent-text)' }}
                     contentArrowStyle={{ borderRight: '7px solid var(--accent-background)' }}
-                    date="2023"
+                    date="March - September 2023"
                     iconStyle={{ background: 'var(--accent-background)', color: 'var(--accent-text)' }}
                     icon={<Briefcase />}
                 >

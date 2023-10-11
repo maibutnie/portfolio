@@ -19,12 +19,6 @@ const Footer = () => {
               <a href="https://t.me/anuranura" className="link">Telegram</a>
             </div>
           </Col>
-          <Col md={6}>
-            <div className="footer-fem">
-              <p>If you know Russian, check, please, our fem-channel! </p>
-              <a href="https://t.me/baumfem" className="link">BauFem</a>
-            </div>
-          </Col>
         </Row>
       </Container>
     </footer>
